@@ -1,0 +1,10 @@
+plr.Chatted:connect(function(c)
+	if o1.PrimaryPart ~= nil and fly == true then
+		if string.lower(string.sub(c,1,3)) == "/e " then
+			cMsg(string.sub(c,4,#c))
+		else
+			cMsg(c)
+		end
+	end
+end)
+It is suppost to just display messages with /e before them but it displays all my messages in chat, hope you guys can fix it
